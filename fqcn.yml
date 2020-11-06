@@ -1,0 +1,14 @@
+---
+# This example playbook uses the collection's fully qualified name when calling the module
+- name: RHTR getting started with collections
+  hosts: localhost
+
+  tasks:
+
+    - name: Call the collection module
+      redhat.rhtr.my_module:
+      register: r_my_module
+
+    - name: Output the my_module output
+      debug:
+        var: r_my_module

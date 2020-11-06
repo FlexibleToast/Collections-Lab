@@ -1,0 +1,16 @@
+---
+# This example shows using a collections list instead of a fully qualified name
+- name: RHTR getting started with collections
+  hosts: localhost
+  collections:
+    - redhat.rhtr
+
+  tasks:
+
+    - name: Call the collection module
+      my_module:
+      register: r_my_module
+
+    - name: Output the my_module output
+      debug:
+        var: r_my_module

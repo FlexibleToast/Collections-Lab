@@ -1,0 +1,2 @@
+# Red Hat Tech Ready 2020 Collections Lab
+This is my work done for the RHTR Collections Lab that explores using Ansible Collections. The lab is provided to develope an understanding of how to use and create Collections that have become the standard in Ansible version 2.10.
